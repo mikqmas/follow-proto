@@ -26,7 +26,7 @@ class ListResults extends React.PureComponent {
     return (
       <div className="list-results">
         {
-          this.state.data.map(data=><Result key={data.userId} data={data}/>)
+          this.state.data.map(data=><Result key={data.id} data={data}/>)
         }
       </div>
     )

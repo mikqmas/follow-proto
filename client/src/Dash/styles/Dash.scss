@@ -20,21 +20,19 @@
       width: 100%;
     }
 
-    span {
-      display: flex;
-      align-items: center;
-      margin-bottom: 32px;
-    }
-
-    span::before {
-      content: '⌕';
-      font-size: 2em;
-      font-weight: 600;
-    }
+    // span {
+    //   display: flex;
+    //   align-items: center;
+    //   margin-bottom: 32px;
+    // }
+    //
+    // span::before {
+    //   content: '⌕';
+    //   font-size: 2em;
+    //   font-weight: 600;
+    // }
 
     .graph {
-      height: 300px;
-
       max-width: 1024px;
       overflow: hidden;
       position: relative;
