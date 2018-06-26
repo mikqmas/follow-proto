@@ -6,6 +6,7 @@ import './index.css';
 
 //components
 import App from './App';
+import Clover from './Clover';
 import Dash from './Dash/components/Dash';
 import Feedback from './Feedback/components/Feedback';
 import NotFound from './NotFound';
@@ -16,6 +17,7 @@ const appRouter = (
   <Router>
     <Switch>
       <Route exact path="/" component={App}/>
+      <Route exact path="/clover" component={Clover}/>
       <Route path="/dash" component={Dash}/>
       <Route path="/feedback" component={Feedback}/>
       <Route component={ NotFound } />
