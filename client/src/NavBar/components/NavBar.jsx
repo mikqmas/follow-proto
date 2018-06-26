@@ -4,6 +4,7 @@ import '../styles/Navbar.css';
 
 class NavBar extends React.PureComponent {
   render() {
+    const loggedIn = false;
     return(
       <header>
         <nav className="left">
@@ -15,9 +16,16 @@ class NavBar extends React.PureComponent {
           <a href="/why-follow-up">
             <div>Why Follow Up?</div>
           </a>
-          <a href="/dash">
-            <div>Go to Dashboard</div>
-          </a>
+          {
+            loggedIn ?
+            <a href="/dash">
+              <div>Go to Dashboard</div>
+            </a>
+            :
+            <a href="/login">
+              <div>Login</div>
+            </a>
+          }
         </nav>
       </header>
     )
