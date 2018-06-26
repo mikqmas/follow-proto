@@ -7,6 +7,7 @@ import './index.css';
 //components
 import App from './App';
 import Dash from './Dash/components/Dash';
+import Feedback from './Feedback/components/Feedback';
 import NotFound from './NotFound';
 
 import registerServiceWorker from './registerServiceWorker';
@@ -16,6 +17,7 @@ const appRouter = (
     <Switch>
       <Route exact path="/" component={App}/>
       <Route path="/dash" component={Dash}/>
+      <Route path="/feedback" component={Feedback}/>
       <Route component={ NotFound } />
     </Switch>
   </Router>
