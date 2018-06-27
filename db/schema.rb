@@ -31,10 +31,11 @@ ActiveRecord::Schema.define(version: 20180627002948) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "username", null: false
+    t.string "name", null: false
     t.string "email", null: false
-    t.string "token", null: false
     t.string "merchant_id", null: false
+    t.string "session_token"
+    t.string "token"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

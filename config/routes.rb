@@ -5,6 +5,8 @@ Rails.application.routes.draw do
       scope :clover do
         get "/auth", to: "clovers#auth"
         post "/webhook", to: "clovers#webhook"
+        get "/test", to: "clovers#test"
+        get "/login", to: "clovers#login"
       end
 
       # User

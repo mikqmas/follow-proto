@@ -2,7 +2,7 @@ import React from 'react';
 import Util from '../../Util';
 
 function Clover() {
-  fetch('api/v1/clover/auth', {
+  fetch('api/v1/clover/test', {
     accept: 'application/json',
   })
   .then(Util.handleErrors)
@@ -16,3 +16,5 @@ function Clover() {
 }
 
 export default Clover;
+
+// fetch('api/v1/clover/auth', {

@@ -54,7 +54,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Added at 2018-06-22 16:35:22 -0700 by samuelkim:
-gem "foreman", "~> 0.64.0"
+gem "foreman", "~> 0.85.0"
 
 # Added at 2018-06-26 17:29:14 -0700 by samuelkim:
 gem "delayed_job_active_record", "~> 4.1"
