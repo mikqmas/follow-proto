@@ -9,7 +9,7 @@ class NavBar extends React.PureComponent {
       <header>
         <nav className="left">
           <a href="/">
-            <img className="followUpLogo" src="/static/img/icFollowUp.png"/>
+            <img className="followUpLogo" src="/static/img/icFollowUp.png" alt="icFollowUp"/>
           </a>
         </nav>
         <nav className="right">

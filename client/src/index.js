@@ -10,7 +10,7 @@ import Login from './Login/components/Login';
 import Dash from './Dash/components/Dash';
 import Email from './Email/components/Email';
 import Feedback from './Feedback/components/Feedback';
-import Clover from './Clover';
+import Clover from './Clover/components/Clover';
 import NotFound from './NotFound';
 
 import registerServiceWorker from './registerServiceWorker';

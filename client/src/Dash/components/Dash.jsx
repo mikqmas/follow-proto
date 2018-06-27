@@ -44,7 +44,7 @@ class Dash extends React.PureComponent {
     return (
       <div className="dash">
         <div className="left">
-          <img className="followUpLogo" src="/static/img/icFollowUp.png"/>
+          <img className="followUpLogo" src="/static/img/icFollowUp.png" alt="logo"/>
         </div>
         <div className="content">
           <span>

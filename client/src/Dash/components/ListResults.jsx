@@ -1,5 +1,6 @@
 import React from 'react';
 import Result from './Result';
+import Util from '../../Util';
 import '../styles/ListResults.css'
 
 class ListResults extends React.PureComponent {
@@ -9,17 +10,10 @@ class ListResults extends React.PureComponent {
 
   componentWillMount() {
     fetch('https://jsonplaceholder.typicode.com/posts')
-    .then(this.handleErrors)
+    .then(Util.handleErrors)
     .then(res=>res.json())
     .then(json=>this.setState({data: json}))
     .catch(error => console.log(error));
-  }
-
-  handleErrors(resp) {
-    if(!resp.ok) {
-      throw Error(resp.statusText);
-    }
-    return resp;
   }
 
   render() {

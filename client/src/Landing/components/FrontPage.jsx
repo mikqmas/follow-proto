@@ -3,8 +3,6 @@ import GetStarted from './GetStarted';
 import '../styles/Frontpage.css';
 
 function FrontPage() {
-  const visible = false;
-
   return (
     <main className="frontpage">
       <div className="splash">
@@ -26,7 +24,7 @@ function FrontPage() {
           and rewards have already been shared using FollowUp.</h2>
       </div>
       <div className="call-to-action">
-        <img></img>
+        <img alt="cta"></img>
         <h1>Experience the glory of FollowUp, for free.</h1>
         <GetStarted />
       </div>
