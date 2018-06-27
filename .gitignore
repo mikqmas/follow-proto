@@ -43,10 +43,8 @@ config/master.key
 # Ignore node_modules
 node_modules/
 
-
-
-
-
 client/src/**/*.css
 
 config/secrets.yml
+
+.tags*

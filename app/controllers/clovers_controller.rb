@@ -3,7 +3,7 @@ require "uri"
 
 class CloversController < ApplicationController
   skip_before_action :verify_authenticity_token
-  
+
   def auth
     # grab params
     # check see if user exists
@@ -43,7 +43,7 @@ class CloversController < ApplicationController
     # conditions run methods
   end
 
-  def new_order
+  def is_new_order(order)
   end
 
   def has_customer

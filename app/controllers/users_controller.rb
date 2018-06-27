@@ -1,10 +1,11 @@
 class UsersController < ApplicationController
+  skip_before_action :verify_authenticity_token
+
   def create
     @user = User.new(user_params)
-
     respond_to do |format|
       if @user.save
-        FollowUpMailer.sample_email(@user).deliver
+        SendEmailJob.set(wait: 20.seconds).perform_later(@user)
 
         # format.html { redirect_to @user, notice: 'User was successfully create.'}
         format.json { render :show, status: :created, location: @user }
