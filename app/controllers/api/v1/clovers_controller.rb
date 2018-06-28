@@ -4,17 +4,19 @@ require "uri"
 module Api::V1
   class CloversController < ApplicationController
     skip_before_action :verify_authenticity_token
-    before_action :require_logged_in, only: [:test]
+    # before_action :require_logged_in, only: [:test]
 
     def login
       user = User.last
       login!(user)
-      redirect_to api_v1_test_path
+      ses = session[:session_token]
+      render json: {"ses": ses}
     end
 
     def test
-      puts "SUCCESS"
-      render json: {"test": "success", "session": session[:session_token]}
+      ses = session[:session_token]
+      render json: {"ses": ses}
+      # render json: {"test": "success", "session": session[:session_token]}
     end
 
     def auth
